@@ -1,0 +1,154 @@
+<html>
+
+	<head>
+		<title>Noé Laquèche</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"> 
+		<script type="text\javascript">$("a[href*='" + location.pathname + "']").addClass("current");</script>	
+	</head>
+	
+	<body>
+		<header> 
+			<div id="navbg">
+				<div id="navflex">
+					<div id="navtitle">
+						<a href="index.html" id="navname">NOÉ LAQUÈCHE</a>
+						<br />gameplay programmer
+					</div>
+					<div id="navdot">· </div>
+					<div id="navtitle">
+						<h2>LOOKING FOR A 3 TO 4 MONTH INTERNSHIP STARTING IN JUNE</h2>
+						<span class="m-contact"><a target="_blank" href="CV_Noe_Laqueche.pdf">resume</a> · <a href="#">noe.laqueche@gmail.com</a> · <a target="_blank" href="https://twitter.com/noahsfine">twitter</a></span>
+						
+						</div>
+				</div>
+			</div>
+		</header>
+	
+	<div class="body2 rightSized">
+		<div class="p-flex">		
+			<div>
+			<a href="index.html">
+				<div class="title-card">
+					<span>
+						All
+					</span>
+				</div>
+			</a>
+			</div>
+			<div>
+			<a href="projects.html"><div class="title-card"><span>Projects</span></div></a>
+			</div>
+			<div>
+			<a href="proto.html"><div class="title-card-current"><span>Prototypes</span></div></a>
+			</div>
+			<div>
+			<a href="jam.html"><div class="title-card"><span>Jams</span></div></a>
+			</div>
+			<div>
+			<a href="aboutme.html"><div class="title-card"><div class="navres">ABOUT ME</div></div></a>
+			</div>
+			
+		</div>
+		
+		<div class="gall-flex">
+			<div><h5>The Pied Piper of Hamelin (WIP)</h5></div>
+			<!-- <div class="gall-card">	<h4>#LudumDare40 — 15th place</h4></div> -->
+		</div>
+		<div class="gall-flex2">
+			<div class="slideshow-container">
+
+			<div class="mySlides fade">
+				<iframe width="640" height="360" src="https://youtube.com/embed/siUBE1vZHHk"></iframe>
+				<!-- <div class="text">Caption Text</div> -->
+			  </div>
+			
+			  <!-- Full-width images with number and caption text -->
+			  <div class="mySlides fade">
+				<img src="sources/hamelin_archi.png" width="640" height="360px"/>
+				<!-- <div class="text">Caption Text</div> -->
+			  </div>
+
+			  <!-- Next and previous buttons -->
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+			<div class="gall-desc2">
+			
+			<br/><h4>TEAM</h4>
+			<br/>2 people
+			<br/><br/><h4>ENGINE</h4>
+			<br/>Unreal Engine 4
+			<br/><br/><h4>ROLE</h4>
+			<br/>Gameplay programmer
+			<br/>Game designer
+			<!-- <br/><br/><h4>TIME</h4> -->
+			<!-- <br/>5 months -->
+			</div>
+		</div>
+		
+		<!-- The dots/circles -->
+			<div class="dot-container">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			</div>
+		<div class="desc">
+
+<!-- <div style="width:50%"> -->
+<div style="width:100%">
+
+A prototype on <b>UE4</b> I'm making with a friend <b>on my free time</b> to practice my <b>C++ skills</b>, focusing on the <b>player controller and camera behaviour</b>, as well as <b>data transmission</b>. My friend works on the rats' AI.<br><br>
+
+I made this <b>dynamic camera</b> in <b>2 work days</b>, with no prior experience with C++ scripting on UE4. It <b>follows smoothly</b> the  average position between its targets, <b>zooms and dezooms</b> to keep them in frame, 
+and once it reaches its maximum height, <b>lets go of a target</b> to focus on the player.  <br><br>
+
+Those targets will be <b>selected</b> in the world by the <b>player</b>; he will then <b>order the rats</b> to <b>follow or attack them</b>, pressing the face buttons of the gamepad in <b>rhythm</b> like a flute. 
+</div>
+
+<!-- <div style="width:50%"><h4>WHAT I LEARNT:</h4> -->
+	<!-- <br/><br/>I learnt about <b>camera programming</b>, <b>particles and FX</b>, and <b>gameplay programming</b> as a whole. -->
+<!-- <br/><br/>I learnt about <b>managing plannings and deadlines</b>, juggling between <b>development</b> and candidacy.</b> -->
+<!-- <br/><br/>I learnt to <b>let go</b>. I will carry these intentions further on with a future project. -->
+<!-- </div> -->
+
+<!-- <div style="width:40%"><h4>What I learnt :</h4> -->
+	<!-- <br/>I learnt a lot about AI designing and programming, both for enemies and boss. -->
+<!-- <br/><br/>I had to make a hand-made collision detection system. -->
+<!-- <br/><br/>I learnt about managing a project and a team. -->
+<!-- </div></div> -->
+	<!-- </div> -->
+	
+		
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+	
+	</body>
+</html>
